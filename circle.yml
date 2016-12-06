@@ -1,0 +1,15 @@
+machine:
+  environment:
+    NODE_ENV: test
+  hosts:
+    localhost: 127.0.0.1
+  node:
+    version: 6.10.40
+
+dependencies:
+  cache_directories:
+    - "node_modules"
+
+test:
+  override:
+    - python manage.py test
